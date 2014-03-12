@@ -1,10 +1,18 @@
 require 'sinatra/base'
 require 'json'
+require_relative 'lib/questiongenerator'
+require_relative 'lib/question'
 
 configure :production do
 end
 
 class Sudoku < Sinatra::Base
+  get '/question' do
+    q = QuestionGenerator.create
+    ary = [q.table, q.initTable]
+    JSON.generate(ary)
+  end
+
   post '/solve' do
     request.body.rewind
     table = JSON.parse request.body.read

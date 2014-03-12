@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./css/sudoku.css" type="text/css" />
   <script src="./js/sudoku.js" type="text/javascript"></script>
 </head>
-<body onload="obj.drawTable()">
+<body onload="obj.init()">
   <table class="sudokuView" id="sudoku" rules="all">
     <tr>
       <td class="leftTop" onclick="obj.setNumber(this)"></td>
@@ -128,7 +128,8 @@
     </tr>
   </table>
   <br>
-  <input type="button" class="button" name="reset" value="やり直し" onclick="obj.resetTable()">
+  <input type="button" class="button" name="reset" value="やり直し" onclick="obj.reset()">
   <input type="button" class="button" name="solve" value="回答" onclick="obj.solve()">
+  <input type="button" class="button" name="solve" value="他の問題" onclick="obj.init()">
 </body>
 </html>

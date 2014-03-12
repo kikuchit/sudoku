@@ -1,30 +1,26 @@
 function SudokuTable() {
-  this.table = [
-    [0,8,0,1,7,3,6,0,5],
-    [9,0,0,0,0,0,2,0,0],
-    [0,1,3,0,0,0,0,0,0],
-    [7,4,0,2,5,6,0,0,9],
-    [0,0,2,0,9,8,5,7,0],
-    [0,0,0,3,1,7,8,2,4],
-    [8,6,5,9,3,1,7,4,0],
-    [3,2,1,7,6,0,9,5,8],
-    [4,0,0,0,0,0,3,6,0]
-  ];
-
-  this.initTable = [
-    [false,true, false,true, true, true, true, false,true ],
-    [true, false,false,false,false,false,true, false,false],
-    [false,true, true, false,false,false,false,false,false],
-    [true, true, false,true, true, true, false,false,true ],
-    [false,false,true, false,true, true, true, true, false],
-    [false,false,false,true, true, true, true, true, true ],
-    [true, true, true, true, true, true, true, true, false],
-    [true, true, true, true, true, false,true, true, true ],
-    [true, false,false,false,false,false,true, true, false]
-  ];
-
-  this.input = 1;
+  this.table = null;
+  this.initTable = null;
+  this.input = 0;
 };
+
+SudokuTable.prototype.init = function() {
+  var xhr = new XMLHttpRequest();
+  var res = null;
+  xhr.open('GET', './question', false);
+  xhr.setRequestHeader('If-Modified-Since', 'Thu, 01 Jun 1970 00:00:00 GMT');
+  xhr.send(null);
+
+  if(xhr.status == 200) {
+    res = JSON.parse(xhr.responseText);
+    this.table = res[0];
+    this.initTable = res[1];
+  } else {
+    alert('init Error');
+  }
+
+  this.drawTable();
+}
 
 SudokuTable.prototype.drawTable = function() {
   var table = document.getElementById('sudoku');
@@ -72,7 +68,7 @@ SudokuTable.prototype.setInputNumber = function(item, number) {
   item.style.backgroundColor = "red";
 }
 
-SudokuTable.prototype.resetTable = function() {
+SudokuTable.prototype.reset = function() {
   for(var i = 0; i < this.table.length; i++) {
     for(var j = 0; j < this.table[i].length; j++) {
       if(!this.initTable[i][j]) {
