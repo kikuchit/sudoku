@@ -10,28 +10,28 @@ table.inputTable {
   text-align: center;
 }
 
-td.leftTop {width: 30px; height: 30px; border-style: solid; border-width: thick thin thin thick;}
-td.rightTop {width: 30px; height: 30px; border-style: solid; border-width: thick thick thin thin;}
+td.leftTop {width: 36px; height: 36px; border-style: solid; border-width: thick thin thin thick;}
+td.rightTop {width: 36px; height: 36px; border-style: solid; border-width: thick thick thin thin;}
 
-td.leftNormal {width: 30px; height: 30px; border-style: solid; border-width: thin thin thin thick;}
-td.leftSep {width: 30px; height: 30px; border-style: solid; border-width: thin thin medium thick;}
+td.leftNormal {width: 36px; height: 36px; border-style: solid; border-width: thin thin thin thick;}
+td.leftSep {width: 36px; height: 36px; border-style: solid; border-width: thin thin medium thick;}
 
-td.rightNormal {width: 30px; height: 30px; border-style: solid; border-width: thin thick thin thin;}
-td.rightSep {width: 30px; height: 30px; border-style: solid; border-width: thin thick medium thin;}
+td.rightNormal {width: 36px; height: 36px; border-style: solid; border-width: thin thick thin thin;}
+td.rightSep {width: 36px; height: 36px; border-style: solid; border-width: thin thick medium thin;}
 
-td.leftUnder {width: 30px; height: 30px; border-style: solid; border-width: thin thin thick thick;}
-td.rightUnder {width: 30px; height: 30px; border-style: solid; border-width: thin thick thick thin;}
+td.leftUnder {width: 36px; height: 36px; border-style: solid; border-width: thin thin thick thick;}
+td.rightUnder {width: 36px; height: 36px; border-style: solid; border-width: thin thick thick thin;}
 
-td.top {width: 30px; height: 30px; border-style: solid; border-width: thick thin thin thin;}
-td.topSep {width: 30px; height: 30px; border-style: solid; border-width: thick medium thin thin;}
+td.top {width: 36px; height: 36px; border-style: solid; border-width: thick thin thin thin;}
+td.topSep {width: 36px; height: 36px; border-style: solid; border-width: thick medium thin thin;}
 
-td.normal {width: 30px; height: 30px; border-style: solid; border-width: thin thin thin thin;}
-td.normalRightSep {width: 30px; height: 30px; border-style: solid; border-width: thin medium thin thin;}
-td.normalUnderSep {width: 30px; height: 30px; border-style: solid; border-width: thin thin medium thin;}
-td.normalRightUnderSep {width: 30px; height: 30px; border-style: solid; border-width: thin medium medium thin;}
+td.normal {width: 36px; height: 36px; border-style: solid; border-width: thin thin thin thin;}
+td.normalRightSep {width: 36px; height: 36px; border-style: solid; border-width: thin medium thin thin;}
+td.normalUnderSep {width: 36px; height: 36px; border-style: solid; border-width: thin thin medium thin;}
+td.normalRightUnderSep {width: 36px; height: 36px; border-style: solid; border-width: thin medium medium thin;}
 
-td.under {width: 30px; height: 30px; border-style: solid; border-width: thin thin thick thin;}
-td.underSep {width: 30px; height: 30px; border-style: solid; border-width: thin medium thick thin;}
+td.under {width: 36px; height: 36px; border-style: solid; border-width: thin thin thick thin;}
+td.underSep {width: 36px; height: 36px; border-style: solid; border-width: thin medium thick thin;}
 
 td.inputCell {width: 30px; height: 30px;}
 

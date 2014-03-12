@@ -49,7 +49,11 @@ SudokuTable.prototype.setNumber = function(item) {
       }
 
       if(!this.initTable[i][j]) {
-        item.firstChild.innerText = this.input;
+        if(this.input == 0) {
+          item.firstChild.innerText = '';
+        } else {
+          item.firstChild.innerText = this.input;
+        }
         this.table[i][j] = this.input;
       }
       break L;
