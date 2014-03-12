@@ -93,7 +93,7 @@ SudokuTable.prototype.solve = function() {
   }
 
   var req = JSON.stringify(this.table);
-  xhr.open('POST', 'http://localhost:4567/solve');
+  xhr.open('POST', './solve');
   xhr.setRequestHeader('If-Modified-Since', 'Thu, 01 Jun 1970 00:00:00 GMT');
   xhr.send(req)
 }
