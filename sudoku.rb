@@ -1,6 +1,9 @@
 require 'sinatra/base'
 require 'json'
 
+configure :production do
+end
+
 class Sudoku < Sinatra::Base
   post '/solve' do
     request.body.rewind
