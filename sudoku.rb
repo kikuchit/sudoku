@@ -3,9 +3,6 @@ require 'json'
 require_relative 'lib/questiongenerator'
 require_relative 'lib/question'
 
-#configure :production do
-#end
-
 class Sudoku < Sinatra::Base
   get '/question' do
     q = QuestionGenerator.create

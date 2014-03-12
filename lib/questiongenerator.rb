@@ -56,6 +56,7 @@ class QuestionGenerator
       # 配列から1つランダムに取り出す(本当はDBか自動生成にしたい。。。)
       r = Random.new(Time.now.nsec)
       table = QUESTIONS[r.rand(0..4)]
+
       initTable = []
       table.each do |line|
         temp = []
